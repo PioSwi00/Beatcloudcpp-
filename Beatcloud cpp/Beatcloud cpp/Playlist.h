@@ -21,9 +21,9 @@ public:
 	int getSongsNumber() { return tracks_.size(); }
 	void show_Playlist();
 	std::vector<Track>tracklist();
-	//void shuffle();
+	void shuffle();
 
 	
-//	void sort_by_name();
+	void sort_by_name();
 };
 

@@ -17,4 +17,3 @@ public:
 	std::string getPath() { return path_; }	
 	bool operator==(const Track& a);
 };
-
