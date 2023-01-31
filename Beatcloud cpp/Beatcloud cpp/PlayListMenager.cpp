@@ -1,15 +1,21 @@
 #include "PlayListMenager.h"
 
-void PlayListMenager::add_playlist(const PlayList& playlist)
+void PlayListMenager::show_active_playlists()
 {
-	playlists_.push_back(playlist);
+	for (int i = 0; i < playlists_.size(); ++i) {
+		std::cout << playlists_[i].name() << std::endl;
+	}
 }
 
-//void PlayListMenager::remove_playlist(const PlayList& playlist)
-//{
-//	auto it = std::find(playlists_.begin(),playlists_.end(),playlist);
-//	if (it != playlists_.end())
-//	{
-//		playlists_.erase(it);
-//	}
-//}
+void PlayListMenager::remove_playlist(const std::string& track_name)
+{
+	for (std::vector<PlayList>::iterator it = playlists_.begin(); it != playlists_.end();) {
+		if (it->name() == track_name) {
+			it =playlists_.erase(it);
+		}
+		else {
+			++it;
+		}
+	}
+}
+

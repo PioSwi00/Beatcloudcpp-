@@ -24,7 +24,7 @@ int main()
 
 	m.playlists();
 	std::cout << "\n\n";
-	DRUGA.remove_track("One");
+	DRUGA.remove_track("U2");
 	DRUGA.show_Playlist();
 
 	
@@ -32,6 +32,16 @@ int main()
 		std::cout << "good";
 	else
 		std::cout << "bad";
-	
-
+	//m.remove_playlist(DRUGA);
+	std::cout << "\n\n";
+	pierwsza.shuffle();
+	pierwsza.show_Playlist();
+	std::cout << "\n\n"; std::cout << "\n\n";
+	m.add_playlist(pierwsza);
+	m.add_playlist(DRUGA);
+	m.remove_playlist("druga");
+	m.show_active_playlists();
+	std::cout << "---------"<<std::endl;
+	m.add_playlist(DRUGA);
+	m.show_active_playlists();
 }

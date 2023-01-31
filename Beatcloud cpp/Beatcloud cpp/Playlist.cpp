@@ -22,10 +22,10 @@ std::vector<Track> PlayList::getPlaylist()
 	return tracks_;
 }
 
-//void PlayList::shuffle()
-//{
-//	std::shuffle(tracks_.begin(), tracks_.end(), std::mt19937{ std::random_device{}() });
-//}
+void PlayList::shuffle()
+{
+	std::shuffle(tracks_.begin(), tracks_.end(), std::mt19937{ std::random_device{}() });
+}
 /* PlayList::sort_by_name()
 {
 	std::sort(tracks_.begin(), tracks_.end(), [](const auto & a, const auto& b)
