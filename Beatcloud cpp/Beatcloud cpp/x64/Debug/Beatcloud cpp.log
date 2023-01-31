@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 ﻿  Source.cpp
 C:\Users\Piter\Desktop\test\Beatcloudcpp-\Beatcloud cpp\Beatcloud cpp\Playlist.h(21,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   Beatcloud cpp.vcxproj -> C:\Users\Piter\Desktop\test\Beatcloudcpp-\Beatcloud cpp\x64\Debug\Beatcloud cpp.exe
+=======
+﻿  Beatcloud cpp.vcxproj -> C:\Users\user\source\repos\Beatcloudcpp-\Beatcloud cpp\x64\Debug\Beatcloud cpp.exe
+>>>>>>> 68e527fe45d41c036a2cce4439b6af6c1c1e96d9

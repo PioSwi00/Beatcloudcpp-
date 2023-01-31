@@ -26,8 +26,12 @@ int main()
 	std::cout << "\n\n";
 	DRUGA.remove_track("U2");
 	DRUGA.show_Playlist();
+	pierwsza.shuffle();
+	pierwsza.show_Playlist();
+	pierwsza.sort_by_name();
+	pierwsza.show_Playlist();
 
-	
+
 	if (t1 == t4)
 		std::cout << "good";
 	else

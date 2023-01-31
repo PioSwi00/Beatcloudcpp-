@@ -23,7 +23,7 @@ public:
 	std::vector<Track>tracklist();
 	void shuffle();
 
-
-	//void sort_by_name();
+	
+	void sort_by_name();
 };
 

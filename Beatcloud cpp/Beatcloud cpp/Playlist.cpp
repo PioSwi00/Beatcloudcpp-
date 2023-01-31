@@ -28,11 +28,14 @@ void PlayList::shuffle()
 }
 /* PlayList::sort_by_name()
 {
-	std::sort(tracks_.begin(), tracks_.end(), [](const auto & a, const auto& b)
-	{
-			return a.name() < b.name();
-	});
-}*/
+	std::shuffle(tracks_.begin(), tracks_.end(), std::mt19937{ std::random_device{}() });
+}
+void PlayList::sort_by_name()
+{
+	std::sort(tracks_.begin(), tracks_.end(), [](Track lhs,Track rhs) {
+		return lhs.getName() < rhs.getName();
+		});
+}
 void PlayList::show_Playlist()
 {
 	getSongsNumber();
