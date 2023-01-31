@@ -7,10 +7,6 @@ void PlayList::add_track(Track track)
 
 void remove_track(const std::string track_name) {
 	
-	for (int i=0;i<)
-	{
-
-	}
 }
 
 std::vector<Track> PlayList::getPlaylist()
