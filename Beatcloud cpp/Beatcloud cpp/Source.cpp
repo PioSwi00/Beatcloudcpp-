@@ -22,7 +22,9 @@ int main()
 	DRUGA.show_Playlist();
 
 	m.playlists();
-	
+	std::cout << "\n\n";
+	DRUGA.remove_track("One");
+	DRUGA.show_Playlist();
 
 	
 

@@ -5,11 +5,15 @@ void PlayList::add_track(Track track)
 	tracks_.push_back(track);
 }
 
-void remove_track(const std::string track_name) {
-	
-	for (int i=0;i<)
-	{
+void  PlayList::remove_track(const std::string& track_name) {
 
+	for (std::vector<Track>::iterator it = tracks_.begin(); it != tracks_.end();) {
+		if (it->getName() == track_name) {
+			it = tracks_.erase(it);
+		}
+		else {
+			++it;
+		}
 	}
 }
 
@@ -31,10 +35,16 @@ std::vector<Track> PlayList::getPlaylist()
 }*/
 void PlayList::show_Playlist()
 {
+	getSongsNumber();
 	const char sep = ' ';
 	const int spaceWidth = 30;
 	std::cout <<"Playlist:" <<name() << "\n\nNames" << std::setw(spaceWidth) << std::setfill(sep) << "Author" << std::endl;
 	for (Track track : tracks_) {
 		std::cout << track.getName() << std::setw(spaceWidth) << std::setfill(sep) << track.getAuthor() << std::endl;
 	}
+}
+
+std::vector<Track> PlayList::tracklist()
+{
+	return tracks_;
 }

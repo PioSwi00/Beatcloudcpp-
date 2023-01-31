@@ -1,13 +1,3 @@
-﻿  PlayListMenager.cpp
-C:\Users\Piter\Desktop\test\Beatcloudcpp-\Beatcloud cpp\Beatcloud cpp\Playlist.h(20,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  Playlist.cpp
-C:\Users\Piter\Desktop\test\Beatcloudcpp-\Beatcloud cpp\Beatcloud cpp\Playlist.h(20,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.33.31629\include\xutility(5268,21): error C2676: binary '==': 'Track' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.33.31629\include\xutility(3899,30): message : could be 'bool std::operator ==(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &)'
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.33.31629\include\xutility(5268,13): error C2784: 'bool std::operator ==(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &)': could not deduce template argument for 'const std::move_iterator<_Iter> &' from 'Track'
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.33.31629\include\xutility(3899): message : see declaration of 'std::operator =='
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.33.31629\include\xutility(5268,13): error C2784: 'bool std::operator ==(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &)': could not deduce template argument for 'const std::reverse_iterator<_BidIt> &' from 'Track'
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.33.31629\include\xutility(5268,13): error C2784: 'bool std::operator ==(const std::pair<_Ty1,_Ty2> &,const std::pair<_Ty1,_Ty2> &)': could not deduce template argument for 'const std::pair<_Ty1,_Ty2> &' from 'Track'
-  Source.cpp
-C:\Users\Piter\Desktop\test\Beatcloudcpp-\Beatcloud cpp\Beatcloud cpp\Playlist.h(20,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
+﻿  Playlist.cpp
+C:\Users\Piter\Desktop\test\Beatcloudcpp-\Beatcloud cpp\Beatcloud cpp\Playlist.h(21,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Beatcloud cpp.vcxproj -> C:\Users\Piter\Desktop\test\Beatcloudcpp-\Beatcloud cpp\x64\Debug\Beatcloud cpp.exe

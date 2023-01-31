@@ -16,7 +16,7 @@ public:
 
 	std::string name() { return name_; }
 	void add_track(Track track);
-	void remove_track(const std::string track_name);
+	void remove_track(const std::string& track_name);
 	std::vector<Track> getPlaylist();
 	int getSongsNumber() { return tracks_.size(); }
 	void show_Playlist();
