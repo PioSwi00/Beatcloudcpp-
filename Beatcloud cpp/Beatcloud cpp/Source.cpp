@@ -47,5 +47,7 @@ int main()
 	m.show_active_playlists();
 
 	m.save_to_json("C:/Users/Piter/Desktop/jsonfilletest/p.json");
-
+	m.read_from_json("C:/Users/Piter/Desktop/jsonfilletest/z.json");
+	m.show_active_playlists();
+	
 }

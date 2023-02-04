@@ -19,6 +19,39 @@ void PlayListMenager::remove_playlist(const std::string& track_name)
 	}
 }
 
+void PlayListMenager::read_from_json(const std::string& filePath)
+{
+    std::ifstream file(filePath);
+    if (!file.is_open())
+    {
+        std::cerr << "B³¹d pliku" << std::endl;
+        return;
+    }
+
+    json j;
+    file >> j;
+
+    std::vector<json> playlists = j["Playlists"];
+    for (auto& playlist : playlists)
+    {
+        std::string name = playlist["Name"];
+        std::vector<json> tracks = playlist["Tracks"];
+
+        PlayList p(name);
+        for (auto& track : tracks)
+        {
+            std::string title = track["Title"];
+            std::string author = track["Author"];
+            std::string path = track["Path"];
+            p.add_track(Track(title, author, path));
+        }
+
+        playlists_.push_back(p);
+    }
+
+    file.close();
+}
+
 void PlayListMenager::save_to_json(const std::string& filePath) const
 {
     json j;
