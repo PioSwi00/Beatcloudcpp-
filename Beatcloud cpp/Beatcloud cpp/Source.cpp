@@ -32,11 +32,8 @@ int main()
 	pierwsza.show_Playlist();
 
 
-	if (t1 == t4)
-		std::cout << "good";
-	else
-		std::cout << "bad";
-	//m.remove_playlist(DRUGA);
+
+
 	std::cout << "\n\n";
 	pierwsza.shuffle();
 	pierwsza.show_Playlist();
@@ -48,4 +45,7 @@ int main()
 	std::cout << "---------"<<std::endl;
 	m.add_playlist(DRUGA);
 	m.show_active_playlists();
+
+	m.save_to_json("C:/Users/Piter/Desktop/jsonfilletest/p.json");
+
 }

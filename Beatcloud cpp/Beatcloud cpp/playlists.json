@@ -1,0 +1,39 @@
+{
+  "Playlists": [
+    {
+      "Name": "pierwsza",
+      "Tracks": [
+        {
+          "Author": "Shiot.mp3",
+          "Path": "c:/v",
+          "Title": "PhonkMan"
+        },
+        {
+          "Author": "Sandstorm",
+          "Path": "c:/a",
+          "Title": "Darude"
+        },
+        {
+          "Author": "One",
+          "Path": "c:/z",
+          "Title": "U2"
+        }
+      ]
+    },
+    {
+      "Name": "druga",
+      "Tracks": [
+        {
+          "Author": "Sandstorm",
+          "Path": "c:/a",
+          "Title": "Darude"
+        },
+        {
+          "Author": "Sandstorm",
+          "Path": "c:/a",
+          "Title": "Darude"
+        }
+      ]
+    }
+  ]
+}

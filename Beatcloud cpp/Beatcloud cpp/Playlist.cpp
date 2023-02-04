@@ -3,6 +3,7 @@
 void PlayList::add_track(Track track)
 {
 	tracks_.push_back(track);
+	
 }
 
 void  PlayList::remove_track(const std::string& track_name) {
@@ -26,10 +27,7 @@ void PlayList::shuffle()
 {
 	std::shuffle(tracks_.begin(), tracks_.end(), std::mt19937{ std::random_device{}() });
 }
-/* PlayList::sort_by_name()
-{
-	std::shuffle(tracks_.begin(), tracks_.end(), std::mt19937{ std::random_device{}() });
-}
+
 void PlayList::sort_by_name()
 {
 	std::sort(tracks_.begin(), tracks_.end(), [](Track lhs,Track rhs) {
@@ -45,9 +43,4 @@ void PlayList::show_Playlist()
 	for (Track track : tracks_) {
 		std::cout << track.getName() << std::setw(spaceWidth) << std::setfill(sep) << track.getAuthor() << std::endl;
 	}
-}
-
-std::vector<Track> PlayList::tracklist()
-{
-	return tracks_;
 }
